@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import DataContext from "./context/DataContext";
+import HomeView from "./views/HomeView";
+import { Switch, BrowserRouter as Router } from "react-router-dom";
+import NavBar from "./components/NavBar";
+
+import "./App.css";
 
 function App() {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    fetch("/json/database.json")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((err) => console.log(err.message));
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <DataContext.Provider value={data}>
+          <div className="App">
+            <header className="App-header">
+              <HomeView />
+            </header>
+          </div>
+        </DataContext.Provider>
+      </Switch>
+    </Router>
   );
 }
 

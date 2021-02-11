@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "serialID": 1,
+      "productName": "Cannon EOS m200",
+      "imageURL": "https://media.teds.com.au/media/catalog/product/cache/1/image/750x750/9df78eab33525d08d6e5fb8d27136e95/c/a/canon-eos-m200-front-angle.jpg?cache_timestamp=1577062498",
+      "quantity": 10,
+      "manufacturer": "Cannon",
+      "price": 1800
+    },
+    {
+      "serialID": 2,
+      "productName": "Ear Pods",
+      "imageURL": "https://static-uc.olist.ng/upload/20200118/jdce8cbr8qp.jpg",
+      "quantity": 8,
+      "manufacturer": "Apple",
+      "price": 300
+    },
+    {
+      "serialID": 3,
+      "productName": "Iphone SE",
+      "imageURL": "https://media.wired.com/photos/5e9f56f143e5800008514457/1:1/w_1277,h_1277,c_limit/Gear-Feature-Apple_new-iphone-se-white_04152020.jpg",
+      "quantity": 11,
+      "manufacturer": "Apple USA",
+      "price": 1100
+    },
+    {
+      "serialID": 4,
+      "productName": "Surface laptop",
+      "imageURL": "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3oYjc?ver=a28c",
+      "quantity": 13,
+      "manufacturer": "Microsoft",
+      "price": 2400
+    },
+    {
+      "serialID": 5,
+      "productName": "Redmi Sonic Bass Earphones",
+      "imageURL": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601900762.13889418.png",
+      "quantity": 20,
+      "manufacturer": "Redmi",
+      "price": 2400
+    },
+    {
+      "serialID": 6,
+      "productName": "Redmi Sonic Bass Earphones",
+      "imageURL": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601900762.13889418.png",
+      "quantity": 20,
+      "manufacturer": "Redmi",
+      "price": 2400
+    },
+    {
+      "serialID": 7,
+      "productName": "Phantom gaming mouse",
+      "imageURL": "https://www.amkette.com/wp-content/uploads/2020/06/PHANTOM-Gaming-SLEEVE.png",
+      "quantity": 7,
+      "manufacturer": "Phantom",
+      "price": 500
+    },
+    {
+      "serialID": 8,
+      "productName": "Phantom gaming keyboard",
+      "imageURL": "https://www.bermorzone.com.ph/wp-content/uploads/2018/08/38874678_2042819855728754_2746499657281568768_n.jpg",
+      "quantity": 11,
+      "manufacturer": "Phantom",
+      "price": 700
+    },
+    {
+      "serialID": 9,
+      "productName": "Gaming earphone",
+      "imageURL": "https://in.toshibaaudio.com/wp-content/uploads/sites/4/2019/03/game-blue-1-600x600.jpg",
+      "quantity": 11,
+      "manufacturer": "Toshiba",
+      "price": 500
+    },
+    {
+      "serialID": 10,
+      "productName": "Gaming Laptop",
+      "imageURL": "https://www.gizmochina.com/wp-content/uploads/2018/04/laptop-500x500.jpg",
+      "quantity": 13,
+      "manufacturer": "Acer",
+      "price": 1500
+    }
+  ],
+  "userAuth": {
+    "username": "admin",
+    "password": "admin"
+  }
+}
