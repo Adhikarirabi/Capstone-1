@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Product = ({ prodObj }) => {
   return (
-    <Link className="productLink" to={"/product/" + prodObj.serialID}>
+    <Link
+      className="productLink"
+      to={{ pathname: `/product/${prodObj.serialID}` }}
+    >
       <div className="product">
         <img src={prodObj.imageURL} alt="product" className="product__image" />
         <div className="product__paragraph">

@@ -9,11 +9,11 @@ const HomeView = () => {
       {(data) => {
         if (data.items) {
           return (
-            <div>
+            <div className="homeviewWrapper">
               <Searchbar />
               <div className="product--Container">
                 {data.items.map((prodObj) => (
-                  <Product prodObj={prodObj} />
+                  <Product key={prodObj.serialID} prodObj={prodObj} />
                 ))}
               </div>
             </div>
