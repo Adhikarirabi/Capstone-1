@@ -1,24 +1,27 @@
-import { useState } from "react";
-import { GiMagnifyingGlass } from "react-icons/gi";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-const SearchBar = () => {
-  const [query, setQuery] = useState("");
-
+const SearchBar = ({ query, setQuery }) => {
+  let history = useHistory();
+  useEffect(() => {
+    let params = new URLSearchParams();
+    if (query) {
+      params.append("name", query);
+    } else {
+      params.delete("name");
+    }
+    history.push({ search: params.toString() });
+  }, [query, history]);
   return (
-    <form className="searchForm">
-      <input
-        type="text"
-        placeholder="Search Items"
-        value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-        }}
-        className="searchQuery"
-      />
-      <button type="submit">
-        <GiMagnifyingGlass className="searchGlass" />
-      </button>
-    </form>
+    <input
+      type="text"
+      placeholder="Search items by name and manufacturer"
+      value={query}
+      onChange={(e) => {
+        setQuery(e.target.value.toLowerCase());
+      }}
+      className="searchQuery"
+    />
   );
 };
 

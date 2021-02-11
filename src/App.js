@@ -9,6 +9,8 @@ import "./App.css";
 
 function App() {
   const [data, setData] = useState({});
+  const [cart, setCart] = useState([]);
+
   useEffect(() => {
     fetch("/json/database.json")
       .then((res) => res.json())
