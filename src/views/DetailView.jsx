@@ -6,12 +6,15 @@ import Product from "../components/Product";
 const DetailView = () => {
   let params = useParams();
   const [id, setID] = useState(params.id);
+  useEffect(() => {
+    setID(params.id);
+  }, [params.id, id]);
+
   const [item, setItem] = useState({});
 
   return (
     <DataContext.Consumer>
       {(data) => {
-        console.log(data);
         if (data.items) {
           let itemObj = data.items.find((item) => item.serialID == id);
           let suggestions = data.items.filter(
@@ -46,7 +49,7 @@ const DetailView = () => {
                   {suggestions.length > 0 ? (
                     <div className="suggestionsContainer">
                       {suggestions.map((prodObj) => (
-                        <Product prodObj={prodObj} />
+                        <Product key={prodObj.serialID} prodObj={prodObj} />
                       ))}
                     </div>
                   ) : (

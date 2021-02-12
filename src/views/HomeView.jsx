@@ -21,15 +21,15 @@ const HomeView = (props) => {
         <div className="product--Container">
           {items.filter((item) => {
             return (
-              item.productName.toLowerCase().startsWith(query) ||
-              item.manufacturer.toLowerCase().startsWith(query)
+              item.productName.toLowerCase().includes(query) ||
+              item.manufacturer.toLowerCase().includes(query)
             );
           }).length ? (
             items
               .filter((item) => {
                 return (
-                  item.productName.toLowerCase().startsWith(query) ||
-                  item.manufacturer.toLowerCase().startsWith(query)
+                  item.productName.toLowerCase().includes(query) ||
+                  item.manufacturer.toLowerCase().includes(query)
                 );
               })
               .map((prodObj) => (
@@ -44,6 +44,7 @@ const HomeView = (props) => {
       </div>
     );
   } else {
+    console.log(items);
     return <></>;
   }
 };

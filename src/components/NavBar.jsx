@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { AiFillHome, AiOutlineShoppingCart } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
+import CartContext from "../context/CartContext";
 
 const NavBar = () => {
+  let cartData = useContext(CartContext);
   return (
     <nav>
       <ul>
@@ -24,7 +26,7 @@ const NavBar = () => {
           <NavLink to="/cart">
             <AiOutlineShoppingCart className="nav__navIcon" />
             <br />
-            Cart
+            Cart ({cartData.cart.length})
           </NavLink>
         </li>
       </ul>

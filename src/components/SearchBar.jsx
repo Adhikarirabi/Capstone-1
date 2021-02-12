@@ -15,7 +15,7 @@ const SearchBar = ({ query, setQuery }) => {
   return (
     <input
       type="text"
-      placeholder="Search items by name and manufacturer"
+      placeholder="Search by name or manufacturer"
       value={query}
       onChange={(e) => {
         setQuery(e.target.value.toLowerCase());

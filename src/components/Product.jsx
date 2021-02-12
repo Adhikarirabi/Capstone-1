@@ -1,22 +1,39 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import CartContext from "../context/CartContext";
 
 const Product = ({ prodObj }) => {
+  let cartData = useContext(CartContext);
   return (
-    <Link
-      className="productLink"
-      to={{ pathname: `/product/${prodObj.serialID}` }}
-    >
+    <>
       <div className="product">
-        <img src={prodObj.imageURL} alt="product" className="product__image" />
+        <Link
+          className="productLink"
+          to={{ pathname: `/product/${prodObj.serialID}` }}
+        >
+          <img
+            src={prodObj.imageURL}
+            alt="product"
+            className="product__image"
+          />
+        </Link>
         <div className="product__paragraph">
           <h2 className="product__productName">{prodObj.productName}</h2>
           <p>Quantity : {prodObj.quantity}</p>
           <p className="product__price">Price : $ {prodObj.price}</p>
           <p>Maunfacturer : {prodObj.manufacturer}</p>
+          <button
+            className="product__addToCart"
+            onClick={(e) => {
+              e.stopPropagation();
+              cartData.addToCart(prodObj);
+            }}
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
-    </Link>
+    </>
   );
 };
 
