@@ -7,7 +7,7 @@ const CartView = () => {
   let totalprice = 0;
   let quantity = 0;
   cartData.cart.forEach((cartItemObj) => {
-    totalprice += cartItemObj.prodObj.price;
+    totalprice += cartItemObj.prodObj.price * Number(cartItemObj.quantity);
     quantity += Number(cartItemObj.quantity);
   });
   document.title = "Your Cart";
