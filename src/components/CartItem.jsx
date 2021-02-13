@@ -13,8 +13,8 @@ const CartItem = ({ cartItemObj }) => {
             className="cartItemProductImage"
             alt="product"
           />
-          <div>
-            <h2>{cartItemObj.prodObj.productName}</h2>${" "}
+          <div className="discription">
+            <h2 className="productName">{cartItemObj.prodObj.productName}</h2>${" "}
             {cartItemObj.prodObj.price}
             <br />
             Quanity : {cartItemObj.quantity}

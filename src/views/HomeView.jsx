@@ -14,6 +14,7 @@ const HomeView = (props) => {
   useEffect(() => {
     setItems(data.items);
   }, [data.items]);
+  document.title = "TekCamp Ecommerce Site";
   if (items) {
     return (
       <div className="homeviewWrapper">
