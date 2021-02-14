@@ -140,6 +140,7 @@ nav {
 .productImage {
   width: 500px;
   border-radius: 10px;
+  max-height: 500px;
 }
 
 h1.title {
@@ -215,7 +216,8 @@ section.circles span {
   margin-right: 10px;
 }
 
-.removeButton {
+.removeButton,
+.editButton {
   background-color: rgb(255, 58, 58);
   display: flex;
   justify-content: center;
@@ -229,19 +231,118 @@ section.circles span {
   cursor: pointer;
 }
 
+.editButton {
+  background-color: rgb(13, 49, 70);
+}
+
 .deleteButton {
   font-size: 20px;
 }
 
 .quantityEdit {
-  text-indent: 5px;
-  width: 1.3cm;
-  height: 0.8cm;
+  width: 1cm;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border: 0;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  height: 1cm;
   margin: 5px;
 }
 
 .cartContainer {
   margin: 1cm 2cm;
+}
+
+.submitBtn {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#outOfStock {
+  font-size: 14px;
+  background-color: red;
+  padding: 4px;
+  width: max-content;
+  color: white;
+}
+
+.logInForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logInForm fieldset {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px black;
+}
+
+.username,
+.password {
+  height: 1cm;
+  text-indent: 10px;
+}
+
+.adminLogin {
+  margin: 10px 0;
+  border-bottom: 2px solid black;
+  font-size: 20px;
+}
+
+.adminListViewWrapper {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1cm;
+}
+
+.adminInfo {
+  max-width: 556px;
+  margin: auto;
+  margin-top: 1cm;
+}
+
+.adminEditForm {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-wrapper {
+  max-width: 70vw;
+  margin: 1cm auto;
+}
+
+.form-group input {
+  text-indent: 10px;
+  height: 1cm;
+}
+
+.form-group textarea {
+  text-indent: 10px;
+  width: 385px;
+  height: 237px;
+  padding: 5px;
+}
+
+.form-group p {
+  margin: 1cm 0;
+}
+
+.updateBtn {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.suggestionsContainer .product {
+  margin: 0 15px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -291,6 +392,16 @@ section.circles span {
     grid-template-columns: auto;
     margin: 0;
     justify-content: center;
+  }
+
+  .adminEditForm {
+    margin: 0;
+  }
+
+  .adminInfo {
+    max-width: 50vw;
+    margin: auto;
+    margin-top: 1cm;
   }
 
   .product {

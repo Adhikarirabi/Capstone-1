@@ -19,18 +19,23 @@ const Product = ({ prodObj }) => {
         </Link>
         <div className="product__paragraph">
           <h2 className="product__productName">{prodObj.productName}</h2>
-          <p>Quantity : {prodObj.quantity}</p>
+          {prodObj.quantity !== 0 && <p>Quantity {prodObj.quantity}</p>}
+          {prodObj.quantity === 0 && <p id="outOfStock">Out of Stock </p>}
           <p className="product__price">Price : $ {prodObj.price}</p>
           <p>Maunfacturer : {prodObj.manufacturer}</p>
-          <button
-            className="product__addToCart"
-            onClick={(e) => {
-              e.stopPropagation();
-              cartData.addToCart(prodObj);
-            }}
-          >
-            Add To Cart
-          </button>
+          {prodObj.quantity ? (
+            <button
+              className="product__addToCart"
+              onClick={(e) => {
+                e.stopPropagation();
+                cartData.addToCart(prodObj);
+              }}
+            >
+              Add To Cart
+            </button>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </>

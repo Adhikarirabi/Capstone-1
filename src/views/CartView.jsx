@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import CartContext from "../context/CartContext";
 import CartItem from "../components/CartItem";
+import Checkout from "../components/Checkout";
 
 const CartView = () => {
   let cartData = useContext(CartContext);
@@ -37,6 +38,8 @@ const CartView = () => {
             Clear Cart
           </button>
           <br />
+
+          <Checkout />
 
           {cartData.cart.map((cartItemObj) => (
             <CartItem

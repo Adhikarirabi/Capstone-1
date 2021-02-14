@@ -21,16 +21,19 @@ const CartItem = ({ cartItemObj }) => {
           </div>
         </div>
         <div className="cartItemActions">
-          Quantity{" "}
-          <input
-            type="number"
-            min="1"
-            value={cartItemObj.quantity}
-            onChange={(e) => {
-              cartData.updateCartItem(cartItemObj.prodObj, e.target.value);
-            }}
+          <br></br>
+          <button
             className="quantityEdit"
-          />
+            onClick={() => cartData.updateCartItem(cartItemObj.prodObj, +1)}
+          >
+            +
+          </button>
+          <button
+            className="quantityEdit"
+            onClick={() => cartData.updateCartItem(cartItemObj.prodObj, -1)}
+          >
+            -
+          </button>
           <br />
           <button
             className="removeButton"

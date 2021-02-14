@@ -5,7 +5,7 @@ import Product from "../components/Product";
 import { useLocation } from "react-router-dom";
 
 const HomeView = (props) => {
-  let data = useContext(DataContext);
+  let { data } = useContext(DataContext);
   let search = useLocation().search;
   let params = new URLSearchParams(search);
 

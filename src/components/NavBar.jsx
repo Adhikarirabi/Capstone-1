@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AiFillHome, AiOutlineShoppingCart } from "react-icons/ai";
+import { RiAdminLine } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 import CartContext from "../context/CartContext";
 
@@ -17,7 +18,7 @@ const NavBar = () => {
         </li>
         <li className="nav__navitem">
           <NavLink to="/admin">
-            <AiFillHome className="nav__navIcon" />
+            <RiAdminLine className="nav__navIcon" />
             <br />
             Admin
           </NavLink>
