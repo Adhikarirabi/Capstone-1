@@ -47,15 +47,6 @@
     },
     {
       "serialID": 6,
-      "productName": "Redmi Sonic Bass Earphones",
-      "imageURL": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1601900762.13889418.png",
-      "quantity": 20,
-      "manufacturer": "Redmi",
-      "price": 2400,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "serialID": 7,
       "productName": "Phantom gaming mouse",
       "imageURL": "https://www.amkette.com/wp-content/uploads/2020/06/PHANTOM-Gaming-SLEEVE.png",
       "quantity": 7,
@@ -64,7 +55,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "serialID": 8,
+      "serialID": 7,
       "productName": "Phantom gaming keyboard",
       "imageURL": "https://www.bermorzone.com.ph/wp-content/uploads/2018/08/38874678_2042819855728754_2746499657281568768_n.jpg",
       "quantity": 11,
@@ -73,7 +64,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "serialID": 9,
+      "serialID": 8,
       "productName": "Gaming earphone",
       "imageURL": "https://in.toshibaaudio.com/wp-content/uploads/sites/4/2019/03/game-blue-1-600x600.jpg",
       "quantity": 11,
@@ -82,7 +73,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "serialID": 10,
+      "serialID": 9,
       "productName": "Gaming Laptop",
       "imageURL": "https://www.gizmochina.com/wp-content/uploads/2018/04/laptop-500x500.jpg",
       "quantity": 13,
@@ -91,7 +82,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
-      "serialID": 11,
+      "serialID": 10,
       "productName": "Cannon rebel 3ti",
       "imageURL": "https://sites.google.com/site/spelmaninnovationlab/_/rsrc/1501794341327/reference-all-tools/dslr-canon-rebel-t3i/DSLR%20%3A%3A%20CANON%20REBEL%20T5.png?height=400&width=400",
       "quantity": 10,

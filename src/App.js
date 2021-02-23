@@ -127,9 +127,10 @@ function App() {
                     setIsLoggedIn={setIsLoggedIn}
                   />
                 </Route>
+                <Route path="/product/:id" component={DetailView}></Route>
+
                 {isLoggedIn ? (
                   <>
-                    <Route path="/product/:id" component={DetailView}></Route>
                     <Route path="/admin/:id/edit" component={AdminEdit}></Route>
                     <Route path="/admin/item/add" component={AdminAdd}></Route>
                   </>

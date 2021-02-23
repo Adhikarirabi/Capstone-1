@@ -20,6 +20,7 @@ const Product = ({ prodObj }) => {
         <div className="product__paragraph">
           <h2 className="product__productName">{prodObj.productName}</h2>
           {prodObj.quantity !== 0 && <p>Quantity {prodObj.quantity}</p>}
+          
           {prodObj.quantity === 0 && <p id="outOfStock">Out of Stock </p>}
           <p className="product__price">Price : $ {prodObj.price}</p>
           <p>Maunfacturer : {prodObj.manufacturer}</p>
